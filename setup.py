@@ -33,9 +33,9 @@ setup(
     long_description_content_type="text/markdown",
     
     # Author information
-    author="Your Name",
-    author_email="your.email@example.com",
-    url="https://github.com/yourusername/doc-to-excel-converter",
+    author="AIStrikerX",
+    author_email="contact@aistrikerx.com",
+    url="https://github.com/AIStrikerX/doc-to-excel-converter",
     
     # License and classifiers
     license="MIT",
@@ -97,9 +97,9 @@ setup(
     
     # Project URLs
     project_urls={
-        "Bug Reports": "https://github.com/yourusername/doc-to-excel-converter/issues",
-        "Source": "https://github.com/yourusername/doc-to-excel-converter",
-        "Documentation": "https://doc-to-excel-converter.readthedocs.io/",
+        "Bug Reports": "https://github.com/AIStrikerX/doc-to-excel-converter/issues",
+        "Source": "https://github.com/AIStrikerX/doc-to-excel-converter",
+        "Documentation": "https://github.com/AIStrikerX/doc-to-excel-converter/blob/main/docs/api.md",
     },
     
     # Keywords for PyPI search

@@ -32,7 +32,7 @@ A powerful Python tool for bulk processing Word documents (.docx) containing Mul
 
 ### Install from Source
 ```bash
-git clone https://github.com/yourusername/doc-to-excel-converter.git
+git clone https://github.com/AIStrikerX/doc-to-excel-converter.git
 cd doc-to-excel-converter
 pip install -r requirements.txt
 ```
@@ -337,7 +337,7 @@ We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.
 
 ### Development Setup
 ```bash
-git clone https://github.com/yourusername/doc-to-excel-converter.git
+git clone https://github.com/AIStrikerX/doc-to-excel-converter.git
 cd doc-to-excel-converter
 pip install -e .
 pip install -r requirements-dev.txt
@@ -357,8 +357,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 🙋‍♂️ Support
 
 - **Documentation**: [docs/](docs/)
-- **Issues**: [GitHub Issues](https://github.com/yourusername/doc-to-excel-converter/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/yourusername/doc-to-excel-converter/discussions)
+- **Issues**: [GitHub Issues](https://github.com/AIStrikerX/doc-to-excel-converter/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/AIStrikerX/doc-to-excel-converter/discussions)
 
 ## 🎯 Roadmap
 
