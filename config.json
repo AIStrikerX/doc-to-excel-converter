@@ -1,0 +1,79 @@
+{
+  "description": "Configuration file for DOC to Excel Converter",
+  "version": "1.0.0",
+  
+  "input_path": "./input_folder/",
+  "output_path": "./output.xlsx",
+  
+  "question_settings": {
+    "group": "Medical Questions",
+    "type": "Board Review",
+    "include_topics": true,
+    "validate_answers": true
+  },
+  
+  "processing_settings": {
+    "create_summary": true,
+    "max_questions_per_file": 0,
+    "encoding": "utf-8",
+    "verbose": false,
+    "quiet": false
+  },
+  
+  "parsing_patterns": {
+    "question_patterns": [
+      "^\\s*Question\\s+(\\d+)(?:\\s*[-–—]\\s*(.+))?\\s*$",
+      "^\\s*Q[.\\s]*(\\d+)(?:\\s*[-–—]\\s*(.+))?\\s*$"
+    ],
+    "option_patterns": [
+      "^([A-E])[.)]\\s*(.*)",
+      "^([1-5])[.)]\\s*(.*)"
+    ],
+    "answer_patterns": [
+      "^\\s*Correct\\s*Answer\\s*[:-]?\\s*([A-Ea-e1-5])\\s*$",
+      "^\\s*Answer\\s*[:-]?\\s*([A-Ea-e1-5])\\s*$"
+    ],
+    "explanation_patterns": [
+      "^\\s*Explanation(\\s+(of\\s+the\\s+)?Correct\\s+Answer)?\\s*[:-]?\\s*$",
+      "^\\s*Rationale\\s*[:-]?\\s*$"
+    ]
+  },
+  
+  "column_mapping": {
+    "question_number": "MCQ_NO",
+    "question_text": "Question",
+    "option_a": "Answer1",
+    "option_b": "Answer2", 
+    "option_c": "Answer3",
+    "option_d": "Answer4",
+    "option_e": "Answer5",
+    "correct_answer": "CorAns",
+    "correct_explanation": "CorrectExplanation",
+    "incorrect_explanation": "IncorrectExplanation",
+    "topic": "Topic",
+    "group": "Group",
+    "type": "Type",
+    "source_file": "SourceFile"
+  },
+  
+  "presets": {
+    "medical": {
+      "group": "Medical Questions",
+      "type": "Medical Board Review",
+      "validate_answers": true,
+      "include_topics": true
+    },
+    "educational": {
+      "group": "Educational Content", 
+      "type": "Academic Quiz",
+      "validate_answers": true,
+      "include_topics": true
+    },
+    "simple": {
+      "group": "General",
+      "type": "MCQ",
+      "validate_answers": false,
+      "include_topics": false
+    }
+  }
+}
